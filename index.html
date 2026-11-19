@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jit Knowledge Academy — free Bengali and English competitive exam learning resources, notes and practice tests.">
+<title>Jit Knowledge Academy | Learn Today. Lead Tomorrow.</title>
+<style>
+:root{--navy:#102a43;--blue:#2563eb;--gold:#e8b44a;--ink:#172b4d;--muted:#62748a;--bg:#f5f8fc;--white:#fff;--line:#e4eaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 15px #071b2b33}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:850;letter-spacing:.2px;font-size:1.08rem}.brand span{color:var(--gold)}
+nav{display:flex;gap:17px;align-items:center;flex-wrap:wrap}nav a{font-size:.9rem;color:#e6eef7}nav a:hover{color:var(--gold)}
+.menu{display:none;background:transparent;border:1px solid #ffffff55;color:white;border-radius:9px;padding:7px 11px}
+.hero{background:linear-gradient(120deg,#102a43 0%,#164e83 70%,#2563eb 100%);color:white;padding:78px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:35px;align-items:center}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.08;margin:12px 0 18px;letter-spacing:-1.5px}.hero p{max-width:650px;color:#e0eaf5;font-size:1.08rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{border:0;border-radius:10px;padding:12px 18px;font-weight:750;cursor:pointer;display:inline-block}.primary{background:var(--gold);color:#172b4d}.outline{border:1px solid #ffffff88;color:white;background:transparent}.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:22px;padding:24px;backdrop-filter:blur(8px)}.hero-card strong{font-size:2.3rem;display:block;color:var(--gold)}.hero-card div{padding:12px 0;border-bottom:1px solid #ffffff24}.hero-card div:last-child{border:0}
+section{padding:62px 0}.section-head{text-align:center;margin:0 auto 30px;max-width:720px}.section-head h2{font-size:2rem;margin:0 0 8px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 24px #18324b08}.card h3{margin:8px 0 5px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.94rem}.ico{width:44px;height:44px;border-radius:12px;background:#eaf1ff;display:grid;place-items:center;font-size:1.35rem}
+.alt{background:#edf3fa}.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}.list{padding-left:20px}.list li{margin:9px 0}.pill{display:inline-block;background:#eaf1ff;color:#1d4ed8;padding:4px 10px;border-radius:99px;font-size:.78rem;font-weight:750;margin:3px}
+.resource{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid var(--line);padding:13px 0}.resource:last-child{border:0}.resource small{color:var(--muted);display:block}.tag{font-size:.75rem;color:#1d4ed8;background:#eff6ff;padding:4px 8px;border-radius:8px;white-space:nowrap}
+input,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:white}label{font-weight:700;display:block;margin:12px 0 6px}.quizbox{max-width:720px;margin:auto}.question{font-weight:750;font-size:1.1rem;margin:12px 0}.option{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:9px;margin:8px 0;background:#fff;cursor:pointer}.option input{width:auto;margin-right:8px}.result{font-weight:800;margin-top:14px}
+footer{background:#0b2033;color:#dbe7f3;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot small{color:#aebfd0}.notice{font-size:.86rem;color:var(--muted);background:#fff8e7;border:1px solid #f4dfad;padding:13px;border-radius:10px}
+@media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav{padding:12px 0;align-items:flex-start}.menu{display:block}nav{display:none;position:absolute;top:65px;left:0;right:0;background:var(--navy);padding:15px 4%;flex-direction:column;align-items:flex-start}nav.open{display:flex}.hero{padding:55px 0}.hero-card{max-width:430px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.brand{font-size:.96rem}section{padding:48px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">JIT <span>KNOWLEDGE</span> ACADEMY</a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Open menu">☰ Menu</button>
+<nav>
+<a href="#home">Home</a><a href="#subjects">Subjects</a><a href="#resources">Study Resources</a><a href="#quiz">Mock Test</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Free learning • Smart preparation</div><h1>Learn Today.<br><span style="color:#e8b44a">Lead Tomorrow.</span></h1>
+<p>Welcome to <b>Jit Knowledge Academy</b> — a free learning space for competitive exam aspirants. Learn General Knowledge, History, Geography, Indian Polity, Mathematics and Reasoning in Bengali and English.</p>
+<div class="actions"><a class="btn primary" href="#subjects">Explore Subjects →</a><a class="btn outline" href="#quiz">Try a Free Quiz</a></div></div>
+<div class="hero-card"><div><strong>100%</strong>Free learning resources</div><div><strong>বাংলা + EN</strong>Bilingual learning support</div><div><strong>Practice</strong>Topic-wise questions and quizzes</div></div>
+</div></section>
+<section id="subjects"><div class="wrap"><div class="section-head"><h2>Explore Subjects</h2><p>Build strong concepts, revise important facts and practise regularly.</p></div>
+<div class="grid">
+<article class="card"><div class="ico">🌍</div><h3>General Knowledge</h3><p>India GK, World GK, important days, awards, books and one-liners.</p><span class="pill">GK</span><span class="pill">One-liners</span></article>
+<article class="card"><div class="ico">🏛️</div><h3>History</h3><p>Ancient, Medieval and Modern Indian History with timelines and key events.</p><span class="pill">Ancient</span><span class="pill">Modern</span></article>
+<article class="card"><div class="ico">🗺️</div><h3>Geography</h3><p>Physical, Indian and World Geography, climate, rivers and environment.</p><span class="pill">India</span><span class="pill">World</span></article>
+<article class="card"><div class="ico">⚖️</div><h3>Indian Polity</h3><p>Constitution, Fundamental Rights, Parliament, President and Judiciary.</p><span class="pill">Constitution</span><span class="pill">Governance</span></article>
+<article class="card"><div class="ico">➗</div><h3>Mathematics</h3><p>Arithmetic, percentage, average, ratio, profit and loss, time and work.</p><span class="pill">Basic to Advanced</span></article>
+<article class="card"><div class="ico">🧩</div><h3>Reasoning</h3><p>Series, analogy, coding-decoding, clock, calendar and logical reasoning.</p><span class="pill">Practice</span><span class="pill">Shortcuts</span></article>
+</div></div></section>
+<section class="alt" id="resources"><div class="wrap"><div class="section-head"><h2>Study Resources</h2><p>Start with these learning paths. More notes and PDFs can be added as the academy grows.</p></div>
+<div class="two"><div class="card"><h3>📚 Learning Library</h3>
+<div class="resource"><div><b>Indian Constitution — Introduction</b><small>Polity • Beginner</small></div><span class="tag">Coming soon</span></div>
+<div class="resource"><div><b>Modern Indian History — Timeline</b><small>History • Revision</small></div><span class="tag">Coming soon</span></div>
+<div class="resource"><div><b>Average — Basic Concepts</b><small>Mathematics • Practice</small></div><span class="tag">Coming soon</span></div>
+<div class="resource"><div><b>Atmosphere — Layers</b><small>Geography • Notes</small></div><span class="tag">Coming soon</span></div>
+</div><div class="card"><h3>🎯 How to Study Effectively</h3><ol class="list"><li>Understand the concept before memorising facts.</li><li>Make short notes and revise them weekly.</li><li>Practise questions topic by topic.</li><li>Review every incorrect answer.</li><li>Use official exam notifications for dates and rules.</li></ol><div class="notice">Resources on this website are educational support materials. Always verify exam-specific syllabus and notices from the relevant official authority.</div></div></div></div></section>
+<section id="quiz"><div class="wrap"><div class="section-head"><h2>Free Mini Mock Test</h2><p>Try these sample questions. Your score appears instantly.</p></div>
+<div class="card quizbox" id="quizbox">
+<div class="question">1. What is the average of 10, 20 and 30?</div>
+<label class="option"><input type="radio" name="q1" value="a"> 15</label><label class="option"><input type="radio" name="q1" value="b"> 20</label><label class="option"><input type="radio" name="q1" value="c"> 25</label>
+<div class="question">2. Which is the largest planet in our Solar System?</div>
+<label class="option"><input type="radio" name="q2" value="a"> Earth</label><label class="option"><input type="radio" name="q2" value="b"> Saturn</label><label class="option"><input type="radio" name="q2" value="c"> Jupiter</label>
+<div class="question">3. The Constitution of India came into effect on:</div>
+<label class="option"><input type="radio" name="q3" value="a"> 15 August 1947</label><label class="option"><input type="radio" name="q3" value="b"> 26 January 1950</label><label class="option"><input type="radio" name="q3" value="c"> 26 November 1949</label>
+<button class="btn primary" onclick="gradeQuiz()">Submit Answers</button><button class="btn" style="background:#edf2f7" onclick="resetQuiz()">Reset</button><div class="result" id="result" aria-live="polite"></div>
+</div></div></section>
+<section class="alt" id="about"><div class="wrap two"><div><div class="eyebrow" style="color:#2563eb">About the Academy</div><h2 style="color:#102a43;font-size:2rem">Education should be accessible to everyone.</h2><p>Jit Knowledge Academy aims to make competitive exam preparation easier through clear explanations, structured notes and regular practice in Bengali and English.</p></div><div class="card"><h3>Our Learning Values</h3><ul class="list"><li>Concept-based learning, not blind memorisation.</li><li>Clear and learner-friendly explanations.</li><li>Practice, feedback and continuous improvement.</li><li>Free access to the resources published here.</li></ul></div></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><h2>Contact & Feedback</h2><p>Have a suggestion or found an error? Send feedback to the academy.</p></div><div class="card" style="max-width:650px;margin:auto"><p><b>Academy:</b> Jit Knowledge Academy</p><p><b>Email:</b> Add your public contact email here</p><p><b>Website:</b> Add your published website link here</p><p class="notice">Before publishing, replace the placeholder contact details with an email address you are comfortable making public. Do not publish your personal phone number or private information.</p></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><b>JIT KNOWLEDGE ACADEMY</b><br><small>Learn Today. Lead Tomorrow.</small></div><small>© <span id="year"></span> Jit Knowledge Academy. Educational resources for everyone.</small></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function gradeQuiz(){const answers={q1:'b',q2:'c',q3:'b'};let score=0;for(const [q,a] of Object.entries(answers)){const chosen=document.querySelector('input[name="'+q+'"]:checked');if(chosen&&chosen.value===a)score++;}document.getElementById('result').textContent='Your score: '+score+' / 3 '+(score===3?'— Excellent work!':'— Review the concepts and try again.');}
+function resetQuiz(){document.querySelectorAll('#quizbox input').forEach(x=>x.checked=false);document.getElementById('result').textContent='';}
+</script>
+</body></html>
